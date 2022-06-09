@@ -12,7 +12,7 @@ Adds the ability to "Sign in with PagerDuty".
 Use the following Maven endpoint to download the JAR plugin in your CI/Build:
 
 ```shell
-curl -L -O http://search.maven.org/remotecontent?filepath=com/arthuryidi/provider/pagerduty-identity-provider-keycloak/<version>/pagerduty-identity-provider-keycloak-<version>.jar
+curl -L -O https://search.maven.org/remotecontent?filepath=com/arthuryidi/provider/pagerduty-identity-provider-keycloak/<version>/pagerduty-identity-provider-keycloak-<version>.jar
 ```
 
 _Project not sponsored by PagerDuty._

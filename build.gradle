@@ -20,6 +20,7 @@ plugins {
 gradle.rootProject.ext.libName = 'pagerduty-identity-provider'
 version = '0.1.1'
 group = 'com.arthuryidi.provider'
+archivesBaseName = libName
 java.sourceCompatibility = JavaVersion.VERSION_11
 
 publishing {
@@ -51,19 +52,12 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
 }
 
-
-// https://central.sonatype.org/publish/publish-gradle/#jar-files
-tasks.named('jar') {
-    println("Task :jar")
-
-    archivesBaseName = libName
-    jar {
-        manifest {
-            attributes(
-                    'Implementation-Title': group,
-                    'Implementation-Version': archiveVersion
-            )
-        }
+jar {
+    manifest {
+        attributes(
+            'Implementation-Title': group,
+            'Implementation-Version': archiveVersion
+        )
     }
 }
 
@@ -117,8 +111,6 @@ nexusPublishing {
     }
 }
 
-tasks.named('test') {
-    // Use JUnit Platform for unit tests.
-    println("Task :test")
+test {
     useJUnitPlatform()
 }

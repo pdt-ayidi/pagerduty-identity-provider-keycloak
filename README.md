@@ -8,3 +8,17 @@ Adds the ability to "Sign in with PagerDuty".
 - Install the provider JAR by copying it to `/opt/keycloak/providers/`. [See Server Developer Guide.](https://www.keycloak.org/docs/latest/server_development/index.html#deploy-the-script-jar)
 
 _Project not sponsored by PagerDuty._
+
+---
+
+### Development
+
+#### Publishing
+
+```
+./gradlew signMavenPublication 
+./gradlew publishToSonatype closeAndReleaseSonatypeStagingRepository
+```
+[View Staging Logs](https://s01.oss.sonatype.org/#stagingRepositories)
+
+

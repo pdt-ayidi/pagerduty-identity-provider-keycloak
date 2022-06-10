@@ -24,8 +24,6 @@ If you are using Keycloak's Docker distribution, modify the Dockerfile and use t
 ADD --chown=keycloak <https://...jar> /opt/keycloak/providers/
 ```
 
-_Project not sponsored by PagerDuty._
-
 ---
 
 ### Development
@@ -38,4 +36,6 @@ _Project not sponsored by PagerDuty._
 ```
 [View Staging Logs](https://s01.oss.sonatype.org/#stagingRepositories)
 
+---
 
+_Project not sponsored by PagerDuty._

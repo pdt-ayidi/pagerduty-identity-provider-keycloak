@@ -10,13 +10,8 @@ Adds the ability to "Sign in with PagerDuty."
 ### Build Setup Advice
 
 Use one of the following endpoints to download the JAR plugin in your CI/Build:
-
-```shell
-https://search.maven.org/remotecontent?filepath=com/arthuryidi/provider/pagerduty-identity-provider-keycloak/<version>/pagerduty-identity-provider-keycloak-<version>.jar
-```
-```shell
-https://github.com/pdt-ayidi/pagerduty-identity-provider-keycloak/releases/download/v<version>/pagerduty-identity-provider-<version>.jar
-```
+- `https://search.maven.org/remotecontent?filepath=com/arthuryidi/provider/pagerduty-identity-provider-keycloak/<version>/pagerduty-identity-provider-keycloak-<version>.jar`
+- `https://github.com/pdt-ayidi/pagerduty-identity-provider-keycloak/releases/download/v<version>/pagerduty-identity-provider-<version>.jar`
 
 If you are using Keycloak's Docker distribution, modify the Dockerfile and use the `ADD` command to download the plugin:
 
